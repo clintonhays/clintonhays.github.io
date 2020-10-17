@@ -3,40 +3,43 @@
 //
 
 .nav-toggle {
-	background-color: initial;
+	background-color: inherit;
+	height: 18px;
+	margin-top: 6px;
 	border: none;
 
 	&:focus {
 		outline: none;
 	}
-}
 
-.hamburger {
-	display: block;
-	position: relative;
-}
+	.hamburger {
+		display: block;
+		position: relative;
+	}
 
-.hamburger,
-.hamburger::before,
-.hamburger::after {
-	width: 2em;
-	height: 2px;
-	background-color: #333;
+	.hamburger,
+	.hamburger::before,
+	.hamburger::after {
+		width: 2em;
+		height: 2px;
+		background-color: #333;
+		z-index: 1000;
 
-	transition: transform 250ms ease-in-out;
-}
+		transition: transform 450ms ease-in-out, background-color 350ms linear;
+	}
 
-.hamburger::before,
-.hamburger::after {
-	content: '';
-	position: absolute;
-	left: 0;
-}
+	.hamburger::before,
+	.hamburger::after {
+		content: '';
+		position: absolute;
+		left: 0;
+	}
 
-.hamburger::before {
-	bottom: 6px;
-}
+	.hamburger::before {
+		bottom: 6px;
+	}
 
-.hamburger::after {
-	top: 6px;
+	.hamburger::after {
+		top: 6px;
+	}
 }

@@ -1,0 +1,25 @@
+//
+// - - - - - - - - - - Hamburger Menu - - - - - - - - - - //
+//
+
+.navbar {
+	background-color: cyan;
+	position: absolute;
+	width: 100vw;
+	top: 0;
+}
+
+.navlinks {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+	margin: 5px;
+	z-index: -1;
+
+	.menulink {
+		display: block;
+		margin-bottom: 25px;
+	}
+}
