@@ -39,3 +39,17 @@
 .navbar-open {
 	transform: translatey(14%);
 }
+
+//
+// - - - - - - - - - - Banner Transition - - - - - - - - - - //
+//
+
+.c,
+.r,
+.h {
+	transition: transform 400ms ease-in-out;
+
+	&:hover {
+		transform: translateX(-5px);
+	}
+}

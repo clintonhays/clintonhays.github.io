@@ -349,8 +349,26 @@ template {
 }
 
 header {
-  background-color: cyan;
   z-index: 1;
+}
+
+.menulink {
+  text-decoration: none;
+  color: #f9f3fe;
+}
+
+.menulink:visited {
+  color: #f9f3fe;
+}
+
+.banner {
+  font-size: 2em;
+}
+
+.banner span {
+  font-size: .75em;
+  font-style: italic;
+  border-bottom: 2px solid #ff00c7;
 }
 
 .nav-toggle {
@@ -374,7 +392,7 @@ header {
 .nav-toggle .hamburger::after {
   width: 2em;
   height: 2px;
-  background-color: #333;
+  background-color: #f9f3fe;
   z-index: 1000;
   transition: transform 450ms ease-in-out, background-color 350ms linear;
 }
@@ -395,18 +413,18 @@ header {
 }
 
 .navbar {
-  background-color: cyan;
   position: absolute;
   width: 100vw;
   top: 0;
+  margin-top: 25px;
 }
 
 .navlinks {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   list-style: none;
+  padding: 0;
   margin: 5px;
   z-index: -1;
 }
@@ -414,6 +432,51 @@ header {
 .navlinks .menulink {
   display: block;
   margin-bottom: 25px;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 250px;
+}
+
+.banner p {
+  position: relative;
+  margin: 0;
+}
+
+.banner .r {
+  margin: 25px 0;
+}
+
+.banner .c,
+.banner .r,
+.banner .h {
+  bottom: 0;
+  position: relative;
+  margin-left: 50px;
+  overflow: hidden;
+}
+
+#about {
+  padding-top: 50px;
+}
+
+#about h2 {
+  margin-top: 0;
+}
+
+#about p {
+  margin-bottom: 0;
+}
+
+#projects {
+  padding-top: 50px;
+}
+
+#projects h2 {
+  margin-top: 0;
 }
 
 .nav-toggle .hamburger,
@@ -444,5 +507,17 @@ header {
 
 .navbar-open {
   transform: translatey(14%);
+}
+
+.c,
+.r,
+.h {
+  transition: transform 400ms ease-in-out;
+}
+
+.c:hover,
+.r:hover,
+.h:hover {
+  transform: translateX(-5px);
 }
 /*# sourceMappingURL=styles.css.map */

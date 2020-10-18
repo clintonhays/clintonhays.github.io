@@ -2,13 +2,13 @@
 // - - - - - - - - - - Hamburger Animation - - - - - - - - - - //
 //
 
-// Variables:
+// Global Variables:
 
 const menuToggle = document.querySelector('.nav-toggle');
 const navbar = document.querySelector('.navbar');
 const links = document.querySelectorAll('.menulink');
 
-// Utility Function
+// Utility Functions
 
 function hamburgerToggle () {
 	document.body.classList.toggle('nav-open');

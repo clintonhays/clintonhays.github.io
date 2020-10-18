@@ -1,1 +1,26 @@
+//
+// - - - - - - - - - - Links - - - - - - - - - - //
+//
 
+.menulink {
+	text-decoration: none;
+	color: #f9f3fe;
+
+	&:visited {
+		color: #f9f3fe;
+	}
+}
+
+//
+// - - - - - - - - - - Banner - - - - - - - - - - //
+//
+
+.banner {
+	font-size: 2em;
+
+	span {
+		font-size: .75em;
+		font-style: italic;
+		border-bottom: 2px solid #ff00c7;
+	}
+}
