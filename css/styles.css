@@ -398,6 +398,12 @@ header {
   line-height: .75em;
 }
 
+#contact h2 {
+  width: 60%;
+  border-bottom: 1px solid #ffad00;
+  line-height: .75em;
+}
+
 .nav-toggle {
   background-color: inherit;
   height: 18px;
@@ -486,6 +492,10 @@ header {
 
 #projects h2 {
   margin-top: 0;
+}
+
+#projects img {
+  width: 300px;
 }
 
 .nav-toggle .hamburger,
