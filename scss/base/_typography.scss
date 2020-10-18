@@ -16,11 +16,57 @@
 //
 
 .banner {
-	font-size: 2em;
+	h1 {
+		font-size: 3.25em;
+		margin-bottom: 0;
+	}
+
+	p {
+		width: 300px;
+		text-align: right;
+		font-size: 1.5em;
+	}
+}
+
+//
+// - - - - - - - - - - About - - - - - - - - - - //
+//
+
+#about {
+	h2 {
+		width: 60%;
+		border-bottom: 1px solid #ffad00;
+		line-height: .75em;
+	}
+
+	p {
+		line-height: 1.3em;
+	}
 
 	span {
-		font-size: .75em;
+		color: #ffad00;
+	}
+
+	p:last-of-type {
+		width: 80%;
+		font-size: 1.25em;
 		font-style: italic;
-		border-bottom: 2px solid #ff00c7;
+
+		&::before {
+			content: open-quote;
+			color: #ffad00;
+		}
+	}
+}
+
+//
+// - - - - - - - - - - Projects - - - - - - - - - - //
+//
+
+#projects {
+	h2 {
+		width: 60%;
+		border-bottom: 1px solid #ffad00;
+		line-height: .75em;
 	}
 }

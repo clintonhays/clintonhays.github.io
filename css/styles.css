@@ -337,15 +337,10 @@ template {
   display: none;
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+body {
+  padding: 10px;
+  background-color: #000;
+  color: #9e9c9b;
 }
 
 header {
@@ -361,14 +356,46 @@ header {
   color: #f9f3fe;
 }
 
-.banner {
-  font-size: 2em;
+.banner h1 {
+  font-size: 3.25em;
+  margin-bottom: 0;
 }
 
-.banner span {
-  font-size: .75em;
+.banner p {
+  width: 300px;
+  text-align: right;
+  font-size: 1.5em;
+}
+
+#about h2 {
+  width: 60%;
+  border-bottom: 1px solid #ffad00;
+  line-height: .75em;
+}
+
+#about p {
+  line-height: 1.3em;
+}
+
+#about span {
+  color: #ffad00;
+}
+
+#about p:last-of-type {
+  width: 80%;
+  font-size: 1.25em;
   font-style: italic;
-  border-bottom: 2px solid #ff00c7;
+}
+
+#about p:last-of-type::before {
+  content: open-quote;
+  color: #ffad00;
+}
+
+#projects h2 {
+  width: 60%;
+  border-bottom: 1px solid #ffad00;
+  line-height: .75em;
 }
 
 .nav-toggle {
@@ -414,19 +441,17 @@ header {
 
 .navbar {
   position: absolute;
-  width: 100vw;
   top: 0;
   margin-top: 25px;
 }
 
 .navlinks {
+  width: 300px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style: none;
   padding: 0;
-  margin: 5px;
-  z-index: -1;
 }
 
 .navlinks .menulink {
@@ -435,28 +460,12 @@ header {
 }
 
 .banner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   height: 250px;
+  padding-top: 125px;
 }
 
 .banner p {
-  position: relative;
   margin: 0;
-}
-
-.banner .r {
-  margin: 25px 0;
-}
-
-.banner .c,
-.banner .r,
-.banner .h {
-  bottom: 0;
-  position: relative;
-  margin-left: 50px;
-  overflow: hidden;
 }
 
 #about {
