@@ -445,6 +445,15 @@ header {
   top: 6px;
 }
 
+.read-more {
+  color: white;
+  background: none;
+  outline: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
 .navbar {
   position: absolute;
   top: 0;
@@ -487,6 +496,8 @@ header {
 }
 
 #projects {
+  display: flex;
+  flex-wrap: wrap;
   padding-top: 50px;
 }
 
@@ -496,6 +507,89 @@ header {
 
 #projects img {
   width: 300px;
+}
+
+.project-card {
+  width: 100%;
+  border: 1px solid #ffad00;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.project-card p {
+  padding: 0 10px;
+}
+
+.project-card a {
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  height: 90vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 5px;
+  z-index: 10;
+  background-color: white;
+  max-width: 500px;
+  width: 80%;
+  overflow-y: scroll;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal .modalHeader {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.modal .modalHeader .modalTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal .modalHeader .closeButton {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal .modalBody {
+  padding: 10px 15px;
+  line-height: 1.5em;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .nav-toggle .hamburger,
