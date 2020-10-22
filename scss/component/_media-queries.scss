@@ -1,0 +1,15 @@
+//
+// - - - - - - - - - - 768px - - - - - - - - - - //
+//
+
+@media (min-width: 768px) {
+	.cards {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.project-card {
+		width: 45%;
+	}
+}

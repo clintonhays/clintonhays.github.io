@@ -1,7 +1,3 @@
-//
-// - - - - - - - - - - Hamburger Animation - - - - - - - - - - //
-//
-
 // Global Variables:
 
 const menuToggle = document.querySelector('.nav-toggle');
@@ -47,6 +43,7 @@ links.forEach((link) => {
 });
 
 openModalButtons.forEach((button) => {
+	// iterate through button array and open matching modal
 	button.addEventListener('click', () => {
 		const modal = document.querySelector(button.dataset.modalTarget);
 		openModal(modal);
@@ -54,6 +51,7 @@ openModalButtons.forEach((button) => {
 });
 
 overlay.addEventListener('click', () => {
+	// close overlay
 	const modals = document.querySelectorAll('.modal.active');
 	modals.forEach((modal) => {
 		closeModal(modal);
@@ -61,8 +59,16 @@ overlay.addEventListener('click', () => {
 });
 
 closeModalButtons.forEach((button) => {
+	// iterate over array and close open modals
 	button.addEventListener('click', () => {
 		const modal = button.closest('.modal');
 		closeModal(modal);
 	});
 });
+
+//
+// - - - - - - - - - - Copy Email Address - - - - - - - - - - //
+//
+
+// copies email address from "data-clipboard-text" in email svg
+new ClipboardJS('.emailicon');
