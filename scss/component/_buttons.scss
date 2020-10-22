@@ -56,3 +56,13 @@
 	padding: 0;
 	cursor: pointer;
 }
+
+//
+// - - - - - - - - - - Modal Open Button - - - - - - - - - - //
+//
+
+.emailicon {
+	&:active {
+		transform: scale(.85);
+	}
+}

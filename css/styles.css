@@ -454,6 +454,10 @@ header {
   cursor: pointer;
 }
 
+.emailicon:active {
+  transform: scale(0.85);
+}
+
 .navbar {
   position: absolute;
   top: 0;
