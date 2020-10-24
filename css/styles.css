@@ -654,6 +654,10 @@ header {
   display: block;
 }
 
+.tooltip:active:before {
+  content: 'copied!';
+}
+
 @media (min-width: 768px) {
   .cards {
     display: flex;

@@ -6,6 +6,7 @@ const links = document.querySelectorAll('.menulink');
 const openModalButtons = document.querySelectorAll('[data-modal-target]');
 const closeModalButtons = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('overlay');
+const emailIcon = document.querySelector('.emailicon');
 
 // Utility Functions
 
@@ -29,7 +30,9 @@ function closeModal (modal) {
 	overlay.classList.remove('active');
 }
 
-// Event Listeners:
+//
+// - - - - - - - - - - Hamburger Functionality - - - - - - - - - - //
+//
 
 menuToggle.addEventListener('click', () => {
 	hamburgerToggle();
@@ -41,6 +44,10 @@ links.forEach((link) => {
 		hamburgerToggle();
 	});
 });
+
+//
+// - - - - - - - - - - Modal Functionality - - - - - - - - - - //
+//
 
 openModalButtons.forEach((button) => {
 	// iterate through button array and open matching modal
