@@ -506,7 +506,7 @@ header {
 }
 
 #about p {
-  margin-bottom: 0;
+  margin-bottom: 75px;
 }
 
 #projects {
@@ -653,7 +653,7 @@ header {
   font-size: 1em;
 }
 
-.emailicon:hover:before, .emailicon:hover:after {
+.emailicon:hover:after {
   display: block;
 }
 
@@ -665,6 +665,24 @@ header {
   content: 'Copied!';
   top: 5px;
   left: 13px;
+}
+
+@media (min-width: 400px) {
+  .navlinks {
+    margin: 16px 40px;
+  }
+  .banner h1 {
+    text-align: center;
+  }
+  .banner p {
+    width: 335px;
+  }
+  #about {
+    margin-bottom: 85px;
+  }
+  #projects {
+    margin-bottom: 100px;
+  }
 }
 
 @media (min-width: 768px) {

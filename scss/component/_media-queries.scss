@@ -1,4 +1,32 @@
 //
+// - - - - - - - - - - 400px - - - - - - - - - - //
+//
+
+@media (min-width: 400px) {
+	.navlinks {
+		margin: 16px 40px;
+	}
+
+	.banner {
+		h1 {
+			text-align: center;
+		}
+
+		p {
+			width: 335px;
+		}
+	}
+
+	#about {
+		margin-bottom: 85px;
+	}
+
+	#projects {
+		margin-bottom: 100px;
+	}
+}
+
+//
 // - - - - - - - - - - 768px - - - - - - - - - - //
 //
 
