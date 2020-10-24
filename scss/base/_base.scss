@@ -2,6 +2,12 @@
 // - - - - - - - - - - Body - - - - - - - - - - //
 //
 
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 body {
 	padding: 10px;
 	background-color: #000;

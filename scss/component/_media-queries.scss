@@ -18,6 +18,7 @@
 	}
 
 	#about {
+		padding-top: 55px;
 		margin-bottom: 85px;
 	}
 
@@ -31,6 +32,40 @@
 //
 
 @media (min-width: 768px) {
+	.nav-toggle {
+		display: none;
+	}
+
+	.navbar {
+		display: flex;
+		justify-content: flex-end;
+		width: 740px;
+		margin-top: 16px;
+		transform: none;
+		transition: none;
+	}
+
+	.navlinks {
+		margin: 0;
+
+		.menulink {
+			line-height: .75em;
+			&:hover {
+				border-bottom: 1px solid #ffad00;
+			}
+		}
+	}
+
+	.banner {
+		h1 {
+			font-size: 5em;
+		}
+
+		p {
+			width: 595px;
+		}
+	}
+
 	.cards {
 		display: flex;
 		flex-wrap: wrap;

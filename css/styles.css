@@ -1,3 +1,33 @@
+.nav-toggle .hamburger,
+.nav-toggle .hamburger::before,
+.nav-toggle .hamburger::after {
+  transition: transform 450ms ease-in-out;
+}
+
+.nav-open .hamburger {
+  background-color: inherit;
+}
+
+.nav-open .hamburger::before {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.nav-open .hamburger::after {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+.navbar {
+  transition: transform 600ms ease-in-out;
+}
+
+.navbar {
+  transform: translatey(-100%);
+}
+
+.navbar-open {
+  transform: translatey(14%);
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -337,6 +367,12 @@ template {
   display: none;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   padding: 10px;
   background-color: #000;
@@ -363,10 +399,19 @@ header {
   margin-bottom: 0;
 }
 
+.banner h1 span {
+  color: #ffad00;
+}
+
 .banner p {
   width: 300px;
   text-align: right;
   font-size: 1.5em;
+}
+
+.banner p span {
+  font-style: italic;
+  color: #ffad00;
 }
 
 #about h2 {
@@ -678,6 +723,7 @@ header {
     width: 335px;
   }
   #about {
+    padding-top: 55px;
     margin-bottom: 85px;
   }
   #projects {
@@ -686,6 +732,32 @@ header {
 }
 
 @media (min-width: 768px) {
+  .nav-toggle {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    width: 740px;
+    margin-top: 16px;
+    transform: none;
+    transition: none;
+  }
+  .navlinks {
+    margin: 0;
+  }
+  .navlinks .menulink {
+    line-height: .75em;
+  }
+  .navlinks .menulink:hover {
+    border-bottom: 1px solid #ffad00;
+  }
+  .banner h1 {
+    font-size: 5em;
+  }
+  .banner p {
+    width: 595px;
+  }
   .cards {
     display: flex;
     flex-wrap: wrap;
@@ -694,47 +766,5 @@ header {
   .project-card {
     width: 45%;
   }
-}
-
-.nav-toggle .hamburger,
-.nav-toggle .hamburger::before,
-.nav-toggle .hamburger::after {
-  transition: transform 450ms ease-in-out;
-}
-
-.nav-open .hamburger {
-  background-color: inherit;
-}
-
-.nav-open .hamburger::before {
-  transform: translateY(6px) rotate(45deg);
-}
-
-.nav-open .hamburger::after {
-  transform: translateY(-6px) rotate(-45deg);
-}
-
-.navbar {
-  transition: transform 600ms ease-in-out;
-}
-
-.navbar {
-  transform: translatey(-100%);
-}
-
-.navbar-open {
-  transform: translatey(14%);
-}
-
-.c,
-.r,
-.h {
-  transition: transform 400ms ease-in-out;
-}
-
-.c:hover,
-.r:hover,
-.h:hover {
-  transform: translateX(-5px);
 }
 /*# sourceMappingURL=styles.css.map */
