@@ -458,6 +458,12 @@ header {
   transform: scale(0.85);
 }
 
+.emailicon {
+  background: none;
+  outline: none;
+  border: none;
+}
+
 .navbar {
   position: absolute;
   top: 0;
@@ -627,35 +633,36 @@ header {
   pointer-events: all;
 }
 
-.tooltip {
+.emailicon {
   position: relative;
   cursor: pointer;
 }
 
-.tooltip:before {
-  content: attr(data-text);
-  /* here's the magic */
-  position: absolute;
-  /* vertically center */
-  top: 50%;
-  transform: translateY(-50%);
-  /* move to left */
-  left: 60%;
-  /* basic styles */
-  width: 100px;
-  background: transparent;
-  color: #fff;
-  text-align: center;
+.emailicon:after {
+  content: 'Copy to Clipboard';
   display: none;
-  /* hide by default */
+  position: absolute;
+  z-index: 9999;
+  top: -5px;
+  left: 20px;
+  width: 114px;
+  height: 36px;
+  color: #fff;
+  font-size: 1em;
 }
 
-.tooltip:hover:before {
+.emailicon:hover:before, .emailicon:hover:after {
   display: block;
 }
 
-.tooltip:active:before {
-  content: 'copied!';
+.emailicon:active, .emailicon:focus {
+  outline: none;
+}
+
+.emailicon:active:after, .emailicon:focus:after {
+  content: 'Copied!';
+  top: 5px;
+  left: 13px;
 }
 
 @media (min-width: 768px) {
