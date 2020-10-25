@@ -1,20 +1,10 @@
 //
-// - - - - - - - - - - Contact - - - - - - - - - - //
+// - - - - - - - - - - Tooltip - - - - - - - - - - //
 //
 
 .emailbutton {
 	position: relative;
 	cursor: pointer;
-
-	// &:before {
-	// 	content: '';
-	// 	display: none;
-	// 	position: absolute;
-	// 	z-index: 9998;
-	// 	top: 35px;
-	// 	left: 15px;
-	// 	width: 0;
-	// 	height: 0;
 
 	&:after {
 		content: 'Copy Email Clipboard';
