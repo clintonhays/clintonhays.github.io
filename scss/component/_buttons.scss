@@ -62,9 +62,11 @@
 //
 
 .emailbutton {
+	width: 24px;
 	background: none;
 	outline: none;
 	border: none;
+	padding: 0;
 
 	&:active {
 		transform: scale(.85);

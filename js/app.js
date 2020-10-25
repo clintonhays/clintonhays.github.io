@@ -77,5 +77,9 @@ closeModalButtons.forEach((button) => {
 // - - - - - - - - - - Copy Email Address - - - - - - - - - - //
 //
 
-// copies email address from "data-clipboard-text" in email svg
-new ClipboardJS('.emailbutton');
+// copies email address from "data-clipboard-text" in button
+emailButton.addEventListener('click', (e) => {
+	const email = e.target.dataset.clipboardText;
+	e.target.focus();
+	navigator.clipboard.writeText(email);
+});

@@ -5,6 +5,7 @@
 .emailbutton {
 	position: relative;
 	cursor: pointer;
+	width: 32px;
 
 	&:after {
 		content: 'Copy Email Clipboard';
