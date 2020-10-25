@@ -6,7 +6,7 @@ const links = document.querySelectorAll('.menulink');
 const openModalButtons = document.querySelectorAll('[data-modal-target]');
 const closeModalButtons = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('overlay');
-const emailIcon = document.querySelector('.emailicon');
+const emailButton = document.querySelector('.emailbutton');
 
 // Utility Functions
 
@@ -78,4 +78,4 @@ closeModalButtons.forEach((button) => {
 //
 
 // copies email address from "data-clipboard-text" in email svg
-new ClipboardJS('.emailicon');
+new ClipboardJS('.emailbutton');

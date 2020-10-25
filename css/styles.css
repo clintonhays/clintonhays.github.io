@@ -497,14 +497,14 @@ header {
   cursor: pointer;
 }
 
-.emailicon:active {
-  transform: scale(0.85);
-}
-
-.emailicon {
+.emailbutton {
   background: none;
   outline: none;
   border: none;
+}
+
+.emailbutton:active {
+  transform: scale(0.85);
 }
 
 .navbar {
@@ -690,13 +690,13 @@ footer .social p {
   pointer-events: all;
 }
 
-.emailicon {
+.emailbutton {
   position: relative;
   cursor: pointer;
 }
 
-.emailicon:after {
-  content: '';
+.emailbutton:after {
+  content: 'Copy Email Clipboard';
   display: none;
   position: absolute;
   z-index: 9999;
@@ -708,16 +708,15 @@ footer .social p {
   font-size: 1em;
 }
 
-.emailicon:hover:after {
-  content: 'Copy Email Clipboard';
+.emailbutton:hover:before, .emailbutton:hover:after {
   display: block;
 }
 
-.emailicon:active, .emailicon:focus {
+.emailbutton:active, .emailbutton:focus {
   outline: none;
 }
 
-.emailicon:active:after, .emailicon:focus:after {
+.emailbutton:active:after, .emailbutton:focus:after {
   content: 'Copied!';
   top: 5px;
   left: 13px;
@@ -817,7 +816,7 @@ footer .social p {
   #projects {
     margin-bottom: 150px;
   }
-  .emailicon::after {
+  .emailbutton::after {
     font-size: initial;
   }
 }

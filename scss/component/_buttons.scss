@@ -58,21 +58,15 @@
 }
 
 //
-// - - - - - - - - - - Modal Open Button - - - - - - - - - - //
-//
-
-.emailicon {
-	&:active {
-		transform: scale(.85);
-	}
-}
-
-//
 // - - - - - - - - - - Copy Email Button - - - - - - - - - - //
 //
 
-.emailicon {
+.emailbutton {
 	background: none;
 	outline: none;
 	border: none;
+
+	&:active {
+		transform: scale(.85);
+	}
 }

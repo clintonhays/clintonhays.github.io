@@ -2,12 +2,22 @@
 // - - - - - - - - - - Contact - - - - - - - - - - //
 //
 
-.emailicon {
+.emailbutton {
 	position: relative;
 	cursor: pointer;
 
+	// &:before {
+	// 	content: '';
+	// 	display: none;
+	// 	position: absolute;
+	// 	z-index: 9998;
+	// 	top: 35px;
+	// 	left: 15px;
+	// 	width: 0;
+	// 	height: 0;
+
 	&:after {
-		content: '';
+		content: 'Copy Email Clipboard';
 		display: none;
 		position: absolute;
 		z-index: 9999;
@@ -15,14 +25,13 @@
 		left: 20px;
 		width: 114px;
 		height: 36px;
-
 		color: #fff;
 		font-size: 1em;
 	}
 
 	&:hover {
+		&:before,
 		&:after {
-			content: 'Copy Email Clipboard';
 			display: block;
 		}
 	}
