@@ -396,7 +396,6 @@ header {
 .banner h1 {
   font-family: 'Cabin', sans-serif;
   font-size: 3.25em;
-  margin-bottom: 0;
 }
 
 .banner h1 span {
@@ -404,7 +403,6 @@ header {
 }
 
 .banner p {
-  width: 300px;
   text-align: right;
   font-size: 1.5em;
 }
@@ -447,8 +445,6 @@ header {
 
 #contact h2 {
   width: 60%;
-  border-bottom: 1px solid #ffad00;
-  line-height: .75em;
 }
 
 .nav-toggle {
@@ -532,14 +528,20 @@ header {
 }
 
 .banner {
-  width: 100%;
+  width: 90%;
   height: 250px;
   padding-top: 125px;
   margin: 0 auto;
 }
 
-.banner p {
-  margin: 0;
+.banner .name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.banner .name h1 {
+  margin-bottom: -25px;
 }
 
 #about {
@@ -587,22 +589,30 @@ header {
   cursor: pointer;
 }
 
-.social {
+footer {
+  border-top: 1px solid #ffad00;
+}
+
+footer span {
+  display: none;
+}
+
+footer .social {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   margin: 0 auto;
 }
 
-.social svg {
+footer .social svg {
   margin-right: 25px;
 }
 
-.social svg:nth-child(3) {
+footer .social svg:nth-child(3) {
   margin-right: 0;
 }
 
-.social p {
+footer .social p {
   margin-left: 5px;
 }
 
@@ -686,7 +696,7 @@ header {
 }
 
 .emailicon:after {
-  content: 'Copy Email Clipboard';
+  content: '';
   display: none;
   position: absolute;
   z-index: 9999;
@@ -699,6 +709,7 @@ header {
 }
 
 .emailicon:hover:after {
+  content: 'Copy Email Clipboard';
   display: block;
 }
 
@@ -719,15 +730,17 @@ header {
   .banner h1 {
     text-align: center;
   }
-  .banner p {
-    width: 335px;
-  }
   #about {
     padding-top: 55px;
     margin-bottom: 85px;
   }
   #projects {
     margin-bottom: 100px;
+  }
+  footer span {
+    display: inline;
+    position: absolute;
+    right: 15px;
   }
 }
 
@@ -738,7 +751,7 @@ header {
   .navbar {
     display: flex;
     justify-content: flex-end;
-    width: 740px;
+    width: 95%;
     margin-top: 16px;
     transform: none;
     transition: none;
@@ -748,23 +761,64 @@ header {
   }
   .navlinks .menulink {
     line-height: .75em;
+    transition: all .3s ease-in-out;
   }
   .navlinks .menulink:hover {
-    border-bottom: 1px solid #ffad00;
+    color: #ffad00;
   }
-  .banner h1 {
+  .banner {
+    width: 90%;
+    margin-bottom: 200px;
+  }
+  .banner .name {
+    padding-right: 18%;
+  }
+  .banner .name h1 {
     font-size: 5em;
   }
-  .banner p {
-    width: 595px;
+  #about {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 140px;
   }
-  .cards {
+  #projects {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 75px;
+  }
+  #projects .cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
-  .project-card {
-    width: 45%;
+  #projects .project-card {
+    width: 47%;
+  }
+  #contact {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1260px) {
+  body {
+    font-size: 1.25em;
+  }
+  .banner {
+    padding-top: 190px;
+    margin-bottom: 300px;
+  }
+  .banner .name {
+    padding-right: 25%;
+  }
+  #about {
+    margin-bottom: 195px;
+  }
+  #projects {
+    margin-bottom: 150px;
+  }
+  .emailicon::after {
+    font-size: initial;
   }
 }
 /*# sourceMappingURL=styles.css.map */

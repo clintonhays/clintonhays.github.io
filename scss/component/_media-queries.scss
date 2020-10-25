@@ -11,10 +11,6 @@
 		h1 {
 			text-align: center;
 		}
-
-		p {
-			width: 335px;
-		}
 	}
 
 	#about {
@@ -24,6 +20,14 @@
 
 	#projects {
 		margin-bottom: 100px;
+	}
+
+	footer {
+		span {
+			display: inline;
+			position: absolute;
+			right: 15px;
+		}
 	}
 }
 
@@ -39,7 +43,7 @@
 	.navbar {
 		display: flex;
 		justify-content: flex-end;
-		width: 740px;
+		width: 95%;
 		margin-top: 16px;
 		transform: none;
 		transition: none;
@@ -50,29 +54,82 @@
 
 		.menulink {
 			line-height: .75em;
+			transition: all .3s ease-in-out;
+
 			&:hover {
-				border-bottom: 1px solid #ffad00;
+				color: #ffad00;
 			}
 		}
 	}
 
 	.banner {
-		h1 {
-			font-size: 5em;
-		}
+		width: 90%;
+		margin-bottom: 200px;
 
-		p {
-			width: 595px;
+		.name {
+			padding-right: 18%;
+
+			h1 {
+				font-size: 5em;
+			}
 		}
 	}
 
-	.cards {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
+	#about {
+		width: 90%;
+		margin: auto;
+		margin-bottom: 140px;
 	}
 
-	.project-card {
-		width: 45%;
+	#projects {
+		width: 90%;
+		margin: auto;
+		margin-bottom: 75px;
+
+		.cards {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		.project-card {
+			width: 47%;
+		}
+	}
+
+	#contact {
+		width: 90%;
+		margin: auto;
+	}
+}
+
+//
+// - - - - - - - - - - 1260px - - - - - - - - - - //
+//
+
+@media (min-width: 1260px) {
+	body {
+		font-size: 1.25em;
+	}
+
+	.banner {
+		padding-top: 190px;
+		margin-bottom: 300px;
+
+		.name {
+			padding-right: 25%;
+		}
+	}
+
+	#about {
+		margin-bottom: 195px;
+	}
+
+	#projects {
+		margin-bottom: 150px;
+	}
+
+	.emailicon::after {
+		font-size: initial;
 	}
 }
