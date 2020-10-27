@@ -437,6 +437,15 @@ header {
   color: #ffad00;
 }
 
+#about a {
+  text-decoration: none;
+  color: #ffad00;
+}
+
+#about a:visited {
+  color: #ffad00;
+}
+
 #projects h2 {
   width: 60%;
   border-bottom: 1px solid #ffad00;

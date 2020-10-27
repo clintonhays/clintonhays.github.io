@@ -65,6 +65,15 @@
 			color: #ffad00;
 		}
 	}
+
+	a {
+		text-decoration: none;
+		color: #ffad00;
+
+		&:visited {
+			color: #ffad00;
+		}
+	}
 }
 
 //
