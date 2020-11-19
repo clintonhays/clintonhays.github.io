@@ -825,6 +825,12 @@ footer .social p {
   #about {
     margin-bottom: 195px;
   }
+  #about p {
+    width: 70%;
+  }
+  #about p:last-of-type {
+    width: 40%;
+  }
   #projects {
     margin-bottom: 150px;
   }
