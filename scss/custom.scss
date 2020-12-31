@@ -58,6 +58,15 @@ h2 {
   }
 }
 
+#about a {
+  color: #ff1690;
+
+  &:hover {
+    color: #ff1690;
+    text-shadow: 0px 0px 12px #ff1690;
+  }
+}
+
 .modal-body {
   h3 {
     width: 75%;
